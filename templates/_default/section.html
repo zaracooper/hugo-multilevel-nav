@@ -1,0 +1,15 @@
+{{ define "main" }}
+	<main class="w-75 p-4  border-start border-primary">
+		{{ partial "titlebar" . }}
+		{{ .Content }}
+		<ul class="list-group">
+			{{ range .Paginator.Pages }}
+				<li class="list-group-item">
+					<div>
+						{{ partial "summary.html" . }}
+					</div>
+				</li>
+			{{ end }}
+		</ul>
+	</main>
+{{ end }}

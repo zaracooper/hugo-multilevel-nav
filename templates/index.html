@@ -1,0 +1,13 @@
+{{ define "main" }}
+	<main class="w-75 p-4  border-start border-primary" aria-role="main">
+		{{ partial "navbar" . }}
+		<div class="homepage-content">
+			{{.Content}}
+		</div>
+		<div>
+			{{ range first 10 .Site.RegularPages }}
+				{{ .Render "summary"}}
+			{{ end }}
+		</div>
+	</main>
+{{ end }}

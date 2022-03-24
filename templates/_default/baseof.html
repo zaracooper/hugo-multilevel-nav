@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html  class="d-flex w-100">
+<head>
+    <meta charset="utf-8">
+    <title>
+        {{ block "title" . }} 
+            {{ .Site.Title }} 
+        {{ end }}
+    </title>
+    {{partial "header" .}}
+</head>
+<body class="d-flex align-items-stretch w-100 flex-row">
+    {{ partial "sidebar" . }}
+    {{ block "main" . }} 
+    {{ end }}
+</body>
+</html>
