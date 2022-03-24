@@ -102,13 +102,13 @@ title = "Hugo Multilevel Navigation"
   identifier = 'item-2'
   name = 'Item 2'
   title = 'Item 2'
-  url = '/category-2/sub-category-a/item-2'
+  url = '/category-1/sub-category-a/item-2'
   weight = 2
   parent = 'sub-category-1a'
 [[menu.main]]
   identifier = 'item-3'
   name = 'Item 3'
   title = 'Item 3'
-  url = '/category-3/sub-category-a/item-3'
+  url = '/category-1/sub-category-a/item-3'
   weight = 3
   parent = 'sub-category-1a'
