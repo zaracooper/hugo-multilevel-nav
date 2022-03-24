@@ -1,10 +1,25 @@
 {{ define "main" }}
 	<main class="w-75 p-4  border-start border-primary">
-		{{ partial "titlebar" . }}
+		{{ partial "navbar" . }}
 		{{ .Content }}
+		{{ if .CurrentSection.Sections }}
+			<p class="display-6 text-primary mt-3">Sections</p>
+		{{ end }}
+		<ul class="list-group">
+			{{ range .CurrentSection.Sections }}
+			<li  class="list-group-item list-group-item-action">
+				<div>
+					{{ partial "summary.html" . }}
+				</div>
+			</li>
+			{{ end }}
+		</ul>
+		{{ if .Paginator.Pages }}
+			<p class="display-6 text-primary mt-3">Pages</p>
+		{{ end }}
 		<ul class="list-group">
 			{{ range .Paginator.Pages }}
-				<li class="list-group-item">
+				<li class="list-group-item list-group-item-action">
 					<div>
 						{{ partial "summary.html" . }}
 					</div>

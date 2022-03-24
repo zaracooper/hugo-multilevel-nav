@@ -13,8 +13,9 @@
 				<ul class="nav flex-column ms-3">
 					{{ range .Children }}
 						<li class="nav-item {{ if $currentPage.IsMenuCurrent " main " . }}active{{ end }}">
-							<a href="{{ .URL }}">child:
-								{{ .Name }}</a>
+							<a href="{{ .URL }}">
+								{{ .Name }}
+							</a>
 						</li>
 					{{ end }}
 				</ul>
