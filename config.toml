@@ -1,15 +1,10 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Hugo Multilevel Navigation"
+sectionPagesMenu = "main" 
 
 [menu]
 # Category 1
-[[menu.main]]
-  identifier = 'category-1'
-  name = 'Category 1'
-  title = 'Category 1'
-  url = '/category-1/'
-  weight = 1
 [[menu.main]]
   identifier = 'sub-category-1a'
   name = 'Sub-category A'
@@ -34,12 +29,6 @@ title = "Hugo Multilevel Navigation"
 
 # Category 2
 [[menu.main]]
-  identifier = 'category-2'
-  name = 'Category 2'
-  title = 'Category 2'
-  url = '/category-2/'
-  weight = 2
-[[menu.main]]
   identifier = 'sub-category-2a'
   name = 'Sub-category A'
   title = 'Sub-category A'
@@ -62,12 +51,6 @@ title = "Hugo Multilevel Navigation"
   parent = 'category-2'
 
 # Category 3
-[[menu.main]]
-  identifier = 'category-3'
-  name = 'Category 3'
-  title = 'Category 3'
-  url = '/category-3/'
-  weight = 3
 [[menu.main]]
   identifier = 'sub-category-3a'
   name = 'Sub-category A'
