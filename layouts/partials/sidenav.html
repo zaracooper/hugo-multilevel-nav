@@ -4,21 +4,7 @@
 		{{ $currentPage := . }}
 		{{ range .Site.Menus.main }}
 			{{ if .HasChildren }}
-				<li class="nav-item {{ if $currentPage.HasMenuCurrent " main " . }}active{{ end }}">
-					<a href="#">
-						{{ .Pre }}
-						<span>{{ .Name }}</span>
-					</a>
-				</li>
-				<ul class="nav flex-column ms-3">
-					{{ range .Children }}
-						<li class="nav-item {{ if $currentPage.IsMenuCurrent " main " . }}active{{ end }}">
-							<a href="{{ .URL }}">
-								{{ .Name }}
-							</a>
-						</li>
-					{{ end }}
-				</ul>
+				{{ template "grandchildren" . }}
 			{{ else }}
 				<li class="nav-item">
 					<a href="{{ .URL }}">
@@ -30,3 +16,24 @@
 		{{ end }}
 	</ul>
 </div>
+{{ define "grandchildren" }}
+<li class="nav-item {{ if $currentPage.HasMenuCurrent " main " . }}active{{ end }}">
+	<a href="#">
+		{{ .Pre }}
+		<span>{{ .Name }}</span>
+	</a>
+</li>
+<ul class="nav flex-column ms-3">
+	{{ range .Children }}
+		{{ if .HasChildren }}
+			{{ template "grandchildren" . }}
+		{{ else }}
+			<li class="nav-item {{ if $currentPage.IsMenuCurrent " main " . }}active{{ end }}">
+				<a href="{{ .URL }}">
+					{{ .Name }}
+				</a>
+			</li>
+		{{ end }}
+	{{ end }}
+</ul>
+{{ end }}
