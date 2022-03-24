@@ -20,7 +20,7 @@
 {{ $currentPage := .currentPage }}
 {{ $menuItem := .menuItem }}
 <li class="nav-item {{ if $currentPage.HasMenuCurrent " main " $menuItem }}active{{ end }}">
-	<a href="#">
+	<a href="{{ $menuItem.URL }}">
 		{{ $menuItem.Pre }}
 		<span>{{ $menuItem.Name }}</span>
 	</a>
