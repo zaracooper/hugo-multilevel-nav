@@ -90,25 +90,208 @@ title = "Hugo Multilevel Navigation"
   weight = 3
   parent = 'category-3'
 
-# Sub-category A Items
+# Category 1, Sub-category A Items
 [[menu.main]]
-  identifier = 'item-1'
+  identifier = 'cat-1a-item-1'
   name = 'Item 1'
   title = 'Item 1'
   url = '/category-1/sub-category-a/item-1'
   weight = 1
   parent = 'sub-category-1a'
 [[menu.main]]
-  identifier = 'item-2'
+  identifier = 'cat-1a-item-2'
   name = 'Item 2'
   title = 'Item 2'
   url = '/category-1/sub-category-a/item-2'
   weight = 2
   parent = 'sub-category-1a'
 [[menu.main]]
-  identifier = 'item-3'
+  identifier = 'cat-1a-item-3'
   name = 'Item 3'
   title = 'Item 3'
   url = '/category-1/sub-category-a/item-3'
   weight = 3
   parent = 'sub-category-1a'
+
+# Category 1, Sub-category B Items
+[[menu.main]]
+  identifier = 'cat-1b-item-1'
+  name = 'Item 1'
+  title = 'Item 1'
+  url = '/category-1/sub-category-b/item-1'
+  weight = 1
+  parent = 'sub-category-1b'
+[[menu.main]]
+  identifier = 'cat-1b-item-2'
+  name = 'Item 2'
+  title = 'Item 2'
+  url = '/category-1/sub-category-b/item-2'
+  weight = 2
+  parent = 'sub-category-1b'
+[[menu.main]]
+  identifier = 'cat-1b-item-3'
+  name = 'Item 3'
+  title = 'Item 3'
+  url = '/category-1/sub-category-b/item-3'
+  weight = 3
+  parent = 'sub-category-1b'
+
+  # Category 1, Sub-category C Items
+[[menu.main]]
+  identifier = 'cat-1c-item-1'
+  name = 'Item 1'
+  title = 'Item 1'
+  url = '/category-1/sub-category-c/item-1'
+  weight = 1
+  parent = 'sub-category-1c'
+[[menu.main]]
+  identifier = 'cat-1c-item-2'
+  name = 'Item 2'
+  title = 'Item 2'
+  url = '/category-1/sub-category-c/item-2'
+  weight = 2
+  parent = 'sub-category-1c'
+[[menu.main]]
+  identifier = 'cat-1c-item-3'
+  name = 'Item 3'
+  title = 'Item 3'
+  url = '/category-1/sub-category-c/item-3'
+  weight = 3
+  parent = 'sub-category-1c'
+
+# Category 2, Sub-category A Items
+[[menu.main]]
+  identifier = 'cat-2a-item-1'
+  name = 'Item 1'
+  title = 'Item 1'
+  url = '/category-2/sub-category-a/item-1'
+  weight = 1
+  parent = 'sub-category-2a'
+[[menu.main]]
+  identifier = 'cat-2a-item-2'
+  name = 'Item 2'
+  title = 'Item 2'
+  url = '/category-2/sub-category-a/item-2'
+  weight = 2
+  parent = 'sub-category-2a'
+[[menu.main]]
+  identifier = 'cat-2a-item-3'
+  name = 'Item 3'
+  title = 'Item 3'
+  url = '/category-2/sub-category-a/item-3'
+  weight = 3
+  parent = 'sub-category-2a'
+
+# Category 2, Sub-category B Items
+[[menu.main]]
+  identifier = 'cat-2b-item-1'
+  name = 'Item 1'
+  title = 'Item 1'
+  url = '/category-2/sub-category-b/item-1'
+  weight = 1
+  parent = 'sub-category-2b'
+[[menu.main]]
+  identifier = 'cat-2b-item-2'
+  name = 'Item 2'
+  title = 'Item 2'
+  url = '/category-2/sub-category-b/item-2'
+  weight = 2
+  parent = 'sub-category-2b'
+[[menu.main]]
+  identifier = 'cat-2b-item-3'
+  name = 'Item 3'
+  title = 'Item 3'
+  url = '/category-2/sub-category-b/item-3'
+  weight = 3
+  parent = 'sub-category-2b'
+
+  # Category 2, Sub-category C Items
+[[menu.main]]
+  identifier = 'cat-2c-item-1'
+  name = 'Item 1'
+  title = 'Item 1'
+  url = '/category-2/sub-category-c/item-1'
+  weight = 1
+  parent = 'sub-category-2c'
+[[menu.main]]
+  identifier = 'cat-2c-item-2'
+  name = 'Item 2'
+  title = 'Item 2'
+  url = '/category-2/sub-category-c/item-2'
+  weight = 2
+  parent = 'sub-category-2c'
+[[menu.main]]
+  identifier = 'cat-2c-item-3'
+  name = 'Item 3'
+  title = 'Item 3'
+  url = '/category-2/sub-category-c/item-3'
+  weight = 3
+  parent = 'sub-category-2c'
+# Category 3, Sub-category A Items
+[[menu.main]]
+  identifier = 'cat-3a-item-1'
+  name = 'Item 1'
+  title = 'Item 1'
+  url = '/category-3/sub-category-a/item-1'
+  weight = 1
+  parent = 'sub-category-3a'
+[[menu.main]]
+  identifier = 'cat-3a-item-2'
+  name = 'Item 2'
+  title = 'Item 2'
+  url = '/category-3/sub-category-a/item-2'
+  weight = 2
+  parent = 'sub-category-3a'
+[[menu.main]]
+  identifier = 'cat-3a-item-3'
+  name = 'Item 3'
+  title = 'Item 3'
+  url = '/category-3/sub-category-a/item-3'
+  weight = 3
+  parent = 'sub-category-3a'
+
+# Category 3, Sub-category B Items
+[[menu.main]]
+  identifier = 'cat-3b-item-1'
+  name = 'Item 1'
+  title = 'Item 1'
+  url = '/category-3/sub-category-b/item-1'
+  weight = 1
+  parent = 'sub-category-3b'
+[[menu.main]]
+  identifier = 'cat-3b-item-2'
+  name = 'Item 2'
+  title = 'Item 2'
+  url = '/category-3/sub-category-b/item-2'
+  weight = 2
+  parent = 'sub-category-3b'
+[[menu.main]]
+  identifier = 'cat-3b-item-3'
+  name = 'Item 3'
+  title = 'Item 3'
+  url = '/category-3/sub-category-b/item-3'
+  weight = 3
+  parent = 'sub-category-3b'
+
+# Category 3, Sub-category C Items
+[[menu.main]]
+  identifier = 'cat-3c-item-1'
+  name = 'Item 1'
+  title = 'Item 1'
+  url = '/category-3/sub-category-c/item-1'
+  weight = 1
+  parent = 'sub-category-3c'
+[[menu.main]]
+  identifier = 'cat-3c-item-2'
+  name = 'Item 2'
+  title = 'Item 2'
+  url = '/category-3/sub-category-c/item-2'
+  weight = 2
+  parent = 'sub-category-3c'
+[[menu.main]]
+  identifier = 'cat-3c-item-3'
+  name = 'Item 3'
+  title = 'Item 3'
+  url = '/category-3/sub-category-c/item-3'
+  weight = 3
+  parent = 'sub-category-3c'
